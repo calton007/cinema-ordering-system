@@ -1,0 +1,13 @@
+
+WebTest/.classpath
+*.xml
+WebTest/.myhibernatedata
+WebTest/.project
+WebTest/.settings/.jsdtscope
+*.prefs
+*.class
+*.jar
+*.MF
+*.name
+*.component
+*.container
