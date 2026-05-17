@@ -1,13 +1,37 @@
-
-WebTest/.classpath
-*.xml
-WebTest/.myhibernatedata
-WebTest/.project
-WebTest/.settings/.jsdtscope
-*.prefs
+# Build outputs
+target/
 *.class
-*.jar
-*.MF
-*.name
-*.component
-*.container
+*.war
+*.ear
+
+# Local dependency/cache directories
+.m2/
+
+# Local runtime installed for manual testing
+runtime/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# IDE metadata
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+WebTest/.classpath
+WebTest/.project
+WebTest/.settings/
+WebTest/.myhibernatedata
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep source configuration tracked
+!pom.xml
+!src/main/resources/**/*.xml
+!WebTest/WebRoot/WEB-INF/web.xml
