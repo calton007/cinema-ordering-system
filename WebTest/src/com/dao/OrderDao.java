@@ -26,3 +26,4 @@ public interface OrderDao {
 	public boolean permit_quit(int id);
 	
 }
+

@@ -19,3 +19,4 @@ public void saveCinema(HCinema c);
 	public boolean updateFilm(HCinema c);
 	public List<HCinema> searchfilm(int fid);
 }
+

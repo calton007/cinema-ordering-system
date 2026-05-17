@@ -19,3 +19,4 @@ public interface StarCinemaDao {
 	
 	public List<StarCinema> searchfilm(int fid);
 }
+

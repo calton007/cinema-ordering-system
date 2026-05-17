@@ -20,7 +20,7 @@ public class HibernateUtil {
 	 }
 	 catch(Exception e)
 	 {
-		 e.printStackTrace();
+		 throw new ExceptionInInitializerError(e);
 	 }
 		
 	}
@@ -39,3 +39,4 @@ public class HibernateUtil {
 	
 	
 }
+

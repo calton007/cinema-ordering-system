@@ -45,3 +45,4 @@ public class HCinemaServiceImp implements HCinemaService {
 	}
 
 }
+

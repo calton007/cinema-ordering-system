@@ -16,3 +16,4 @@ public interface StarCinemaService {
 	
 	public List<StarCinema> searchfilm(int fid);
 }
+

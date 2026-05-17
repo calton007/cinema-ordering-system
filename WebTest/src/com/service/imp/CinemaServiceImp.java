@@ -48,3 +48,4 @@ public class CinemaServiceImp implements CinemaService {
 	}
 
 }
+

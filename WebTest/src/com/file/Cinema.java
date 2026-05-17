@@ -1,9 +1,5 @@
 package com.file;
 
-import java.sql.Date;
-
-import javax.websocket.Encoder.Text;
-
 public class Cinema {
 
 	protected  Integer id;
@@ -57,3 +53,4 @@ public class Cinema {
 	}
 	
 }
+
