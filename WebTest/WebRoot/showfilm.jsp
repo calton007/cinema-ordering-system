@@ -31,10 +31,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
-	<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/jquery/jquery-2.0.0.min.js"></script>
+	
+	<link href="assets/vendor/bootstrap/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
@@ -44,6 +44,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <% 
  User u=(User)session.getAttribute("user");
+  if (u == null) {
+      response.sendRedirect("login.jsp");
+      return;
+  }
   System.out.println(session.getAttribute("user"));
   
   Film film=(Film) session.getAttribute("film");
@@ -312,3 +316,8 @@ if(list1!=null)
 	</div>
   </body>
 </html>
+
+
+
+
+

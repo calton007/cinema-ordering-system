@@ -24,10 +24,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
-	<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/jquery/jquery-2.0.0.min.js"></script>
+	
+	<link href="assets/vendor/bootstrap/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
@@ -38,6 +38,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <% 
  User u=(User)session.getAttribute("user");
+  if (u == null) {
+      response.sendRedirect("login.jsp");
+      return;
+  }
   System.out.println(session.getAttribute("user"));
 
   session.setAttribute("user", u);
@@ -61,16 +65,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="nav-collapse collapse navbar-responsive-collapse">
 							<ul class="nav">
 								<li >
-									<a href="success.jsp"><%=u.getId() %>主页</a>
+									<a href="success.jsp">主页</a>
 								</li>
 								<li>
-									<a href="upuser.jsp"><%=u.getU_name() %>个人信息修改</a>
+									<a href="upuser.jsp">个人信息修改</a>
 								</li>
 								<li>
 									<a href="checkcinema.jsp">影院浏览</a>
 								</li>
 								<li class="active">
-									<a href="checkorder.jsp"><%=u.getU_name() %>查看订单</a>
+									<a href="checkorder.jsp">查看订单</a>
 								</li>
 							</ul>
 						</div>
@@ -156,3 +160,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 </body>
 </html>
+
+
+
+
+
+

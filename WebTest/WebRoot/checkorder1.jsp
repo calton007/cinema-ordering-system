@@ -1,22 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
-<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%@ page import="jakarta.servlet.http.*,jakarta.servlet.*" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c"%>
+<%@ taglib uri="jakarta.tags.sql" prefix="sql"%>
 <html>
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
 	<title> 电影在线订票 </title>
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
-	<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-	<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/jquery/jquery-2.0.0.min.js"></script>
+	
+	<link href="assets/vendor/bootstrap/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+	<sql:setDataSource var="snapshot" driver="com.mysql.cj.jdbc.Driver"
      url="jdbc:mysql://localhost:3306/cinemamanagersystem"
      user="root"  password="320615"/>
      <sql:query dataSource="${snapshot}" var="result">
@@ -209,3 +209,6 @@
 </div>
 </body>
 </html>
+
+
+
