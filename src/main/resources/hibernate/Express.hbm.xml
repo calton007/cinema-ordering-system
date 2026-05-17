@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.file">
+    <class name="Express" table="expression">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="fid" column="fid" type="java.lang.Integer"/>
+        <property name="uid" column="uid" type="java.lang.Integer"/>
+        <property name="con" column="con" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

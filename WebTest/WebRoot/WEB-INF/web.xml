@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>cinema-manager-system-db</display-name>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>addfilm</servlet-name>
+        <servlet-class>com.servlet.addfilm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addfilm</servlet-name>
+        <url-pattern>/addfilm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addlist</servlet-name>
+        <servlet-class>com.servlet.addlist</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addlist</servlet-name>
+        <url-pattern>/addlist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addshow</servlet-name>
+        <servlet-class>com.servlet.addshow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addshow</servlet-name>
+        <url-pattern>/addshow</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Clogin</servlet-name>
+        <servlet-class>com.servlet.Clogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Clogin</servlet-name>
+        <url-pattern>/Clogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delexServlet</servlet-name>
+        <servlet-class>com.servlet.delexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delexServlet</servlet-name>
+        <url-pattern>/delexServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delorderServlet</servlet-name>
+        <servlet-class>com.servlet.delorderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delorderServlet</servlet-name>
+        <url-pattern>/delorderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delServlet</servlet-name>
+        <servlet-class>com.servlet.delServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delServlet</servlet-name>
+        <url-pattern>/delServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>denyServlet</servlet-name>
+        <servlet-class>com.servlet.denyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>denyServlet</servlet-name>
+        <url-pattern>/denyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>express</servlet-name>
+        <servlet-class>com.servlet.express</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>express</servlet-name>
+        <url-pattern>/express</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>findfilm</servlet-name>
+        <servlet-class>com.servlet.findfilm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>findfilm</servlet-name>
+        <url-pattern>/findfilm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>orderServlet</servlet-name>
+        <servlet-class>com.servlet.orderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderServlet</servlet-name>
+        <url-pattern>/orderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>passServlet</servlet-name>
+        <servlet-class>com.servlet.passServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>passServlet</servlet-name>
+        <url-pattern>/passServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>permitquitServlet</servlet-name>
+        <servlet-class>com.servlet.permitquitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>permitquitServlet</servlet-name>
+        <url-pattern>/permitquitServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PleaseServlet</servlet-name>
+        <servlet-class>com.servlet.PleaseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PleaseServlet</servlet-name>
+        <url-pattern>/PleaseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>quitServlet</servlet-name>
+        <servlet-class>com.servlet.quitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>quitServlet</servlet-name>
+        <url-pattern>/quitServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>com.servlet.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/Servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/servlet/Servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServelet</servlet-name>
+        <servlet-class>com.servlet.UpdateServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServelet</servlet-name>
+        <url-pattern>/UpdateServelet</url-pattern>
+    </servlet-mapping>
+</web-app>

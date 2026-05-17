@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.file">
+    <class name="StarCinema" table="starcinema">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="fid" column="fid" type="java.lang.Integer"/>
+        <property name="time" column="time" type="java.lang.String"/>
+        <property name="place" column="place" type="java.lang.String"/>
+        <property name="price" column="price" type="java.lang.Double"/>
+        <property name="showtext" column="showtext" type="java.lang.String"/>
+        <property name="num" column="num" type="java.lang.Integer"/>
+    </class>
+</hibernate-mapping>
