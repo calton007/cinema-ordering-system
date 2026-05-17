@@ -1,4 +1,4 @@
-# cinema-manager-system-db
+# cinema-ordering-system
 
 老式影院管理系统，已修复到可在现代环境运行。架构保持不变：JSP + Servlet + Service + DAO + Hibernate + MySQL。
 
@@ -81,15 +81,6 @@ http://localhost:8080/cinema-manager-system-db-1.0.0/
 ```
 
 端口取决于 Tomcat 的 `conf/server.xml`。本地调试时当前使用的是 `8081`。
-
-## 默认账号
-
-可用测试账号以数据库 SQL 中的数据为准。当前本地常用普通用户：
-
-```text
-用户名：112
-密码：12
-```
 
 ## 页面入口
 
